@@ -1,1 +1,295 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    background-color: #0000;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    height: 2cm;
+    position:absolute;
+    top:0;
+    left: 0;
+    padding: 5px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width:20%;
+}
+
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 17px;
+
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition:0.5s ;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: tr;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border:2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top:20px;
+}
+
+.content a:hover{
+    background-color: #fff;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom : 0;
+    z-index: -1;
+    background-size:cover;
+    opacity: 95%;
+    width: 100%;
+
+
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.cta-btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #e1e1e1;
+}
+
+/* About Section */
+#about-section {
+    padding: 50px 0;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+#about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Form suggest */
+#form-section {
+    padding: 50px 0;
+    background: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.carbon-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.carbon-form label {
+    margin-bottom: 10px;
+}
+
+.carbon-form select{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(235, 221, 221);
+    border-radius: 5px;
+    color:white;
+    background-color: black;
+}
+.carbon-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+.carbon-form .cta-btn {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+
+/* Services Section */
+#services-section {
+    padding: 50px 0;
+    background:black;
+    color: white;
+
+}
+
+#services-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.service {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Contact Section */
+#contact-section {
+    padding: 50px 0;
+    background: black;
+    color:white;
+    text-align: center;
+}
+
+#contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form .cta-btn {
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+    }
+
+    #about-section h2,
+    #navigation-section h2,
+    #services-section h2,
+    #contact-section h2 {
+        font-size: 2rem;
+    }
+}
 
